@@ -4,132 +4,119 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Club de Cocina Neo Helvético — MNG Nueva Helvecia</title>
-<meta name="description" content="Martes 19 h en La Casa de Todos. $1.600 el mes. $800 el taller. Socio del club gratis.">
+<meta name="description" content="Martes 19 h. $1.600 el mes. $800 el taller. Socio del club gratis.">
 <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
-  :root{--cream:#f7f1e6;--paper:#fffaf2;--wine:#7a1f2b;--wine-deep:#5c1620;--slate:#3d4a55;--line:rgba(122,31,43,.16);--blue:#2f4d6a;--max:720px}
-  *{box-sizing:border-box;margin:0;padding:0}
-  body{font-family:'Source Sans 3',system-ui,sans-serif;background:var(--cream);color:var(--slate);line-height:1.5}
-  img{max-width:100%;display:block}
-  a{color:var(--wine)}
-  .wrap{max-width:var(--max);margin:0 auto;padding:0 16px 72px}
-  header.top{display:flex;align-items:center;padding:14px 0 10px;gap:12px}
-  .brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--wine)}
-  .brand img{height:54px;width:auto}
-  .brand span{font-size:11px;letter-spacing:.12em;text-transform:uppercase;font-weight:700;line-height:1.3}
-  .hero{position:relative;border-radius:18px;overflow:hidden;margin:8px 0 18px}
-  .hero img{width:100%;height:320px;object-fit:cover}
-  .hero .shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(92,22,32,.15),rgba(92,22,32,.74))}
-  .hero .copy{position:absolute;left:18px;right:18px;bottom:18px;color:#fff}
-  .eyebrow{font-size:12px;letter-spacing:.14em;text-transform:uppercase;opacity:.92}
-  h1,h2{font-family:'Libre Baskerville',Georgia,serif;color:var(--wine);font-weight:700}
-  .hero h1{color:#fff;font-size:clamp(28px,6vw,40px);line-height:1.15;margin:6px 0 8px}
-  .lead{font-size:17px}
-  .card{background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:20px;margin-top:14px}
-  .grid{display:grid;gap:10px;margin-top:12px}
-  @media(min-width:560px){.grid.two{grid-template-columns:1fr 1fr}}
-  .item{background:#f3eadc;border-radius:12px;padding:12px 13px}
-  .item b{display:block;color:var(--wine);font-size:12px;letter-spacing:.06em;text-transform:uppercase;margin-bottom:2px}
-  .photo{border-radius:14px;overflow:hidden;margin:12px 0 4px}
-  .photo img{width:100%;height:210px;object-fit:cover}
-  .caption{font-size:12px;color:#7a8792;margin-bottom:8px}
-  .price{margin:6px 0 10px}
-  .price .month{font-family:'Libre Baskerville',serif;font-size:46px;line-height:1;color:var(--wine-deep)}
-  .price .month-label{font-size:16px;margin-left:6px}
-  .price .unit{display:block;margin-top:4px;font-size:13px;color:#7a8792}
-  .tag{font-size:12px;background:#f3eadc;border-radius:999px;padding:4px 8px;display:inline-block;margin:4px 4px 0 0}
-  table{width:100%;border-collapse:collapse;font-size:14px;margin-top:8px}
-  th,td{text-align:left;padding:8px 4px;border-bottom:1px solid var(--line)}
-  th{color:var(--wine);font-size:11px;letter-spacing:.06em;text-transform:uppercase}
-  .cta{display:block;text-align:center;margin-top:12px;background:var(--wine);color:#fff;text-decoration:none;font-weight:700;padding:13px 16px;border-radius:10px}
-  .fine{font-size:13px;color:#667481;margin-top:10px}
-  .people{display:flex;gap:12px;align-items:center;margin-top:12px}
-  .people img{width:88px;height:88px;object-fit:cover;border-radius:12px;flex-shrink:0}
-  footer{margin-top:28px;text-align:center;font-size:12px;color:#7a8792}
-  footer a{color:var(--blue)}
+:root{--cream:#f7f1e6;--paper:#fffaf2;--wine:#7a1f2b;--wine-deep:#5c1620;--slate:#3d4a55;--line:rgba(122,31,43,.16);--blue:#2f4d6a;--max:720px}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Source Sans 3',system-ui,sans-serif;background:var(--cream);color:var(--slate);line-height:1.5}
+img{max-width:100%;display:block}
+a{color:var(--wine)}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 16px 72px}
+header.top{display:flex;align-items:center;padding:14px 0 10px;gap:12px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--wine)}
+.brand img{height:54px;width:auto}
+.brand span{font-size:11px;letter-spacing:.12em;text-transform:uppercase;font-weight:700;line-height:1.3}
+.hero{position:relative;border-radius:18px;overflow:hidden;margin:8px 0 18px}
+.hero img{width:100%;height:320px;object-fit:cover}
+.hero .shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(92,22,32,.15),rgba(92,22,32,.74))}
+.hero .copy{position:absolute;left:18px;right:18px;bottom:18px;color:#fff}
+.eyebrow{font-size:12px;letter-spacing:.14em;text-transform:uppercase;opacity:.92}
+h1,h2{font-family:'Libre Baskerville',Georgia,serif;color:var(--wine);font-weight:700}
+.hero h1{color:#fff;font-size:clamp(28px,6vw,40px);line-height:1.15;margin:6px 0 8px}
+.lead{font-size:17px}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:20px;margin-top:14px}
+.grid{display:grid;gap:10px;margin-top:12px}
+@media(min-width:560px){.grid.two{grid-template-columns:1fr 1fr}}
+.item{background:#f3eadc;border-radius:12px;padding:12px 13px}
+.item b{display:block;color:var(--wine);font-size:12px;letter-spacing:.06em;text-transform:uppercase;margin-bottom:2px}
+.photo{border-radius:14px;overflow:hidden;margin:12px 0 4px}
+.photo img{width:100%;height:210px;object-fit:cover}
+.caption{font-size:12px;color:#7a8792;margin-bottom:8px}
+.price{margin:6px 0 10px}
+.price .month{font-family:'Libre Baskerville',serif;font-size:46px;line-height:1;color:var(--wine-deep)}
+.price .month-label{font-size:16px;margin-left:6px}
+.price .unit{display:block;margin-top:4px;font-size:13px;color:#7a8792}
+.tag{font-size:12px;background:#f3eadc;border-radius:999px;padding:4px 8px;display:inline-block;margin:4px 4px 0 0}
+table{width:100%;border-collapse:collapse;font-size:14px;margin-top:8px}
+th,td{text-align:left;padding:8px 4px;border-bottom:1px solid var(--line)}
+th{color:var(--wine);font-size:11px;letter-spacing:.06em;text-transform:uppercase}
+.cta{display:block;text-align:center;margin-top:12px;background:var(--wine);color:#fff;text-decoration:none;font-weight:700;padding:13px 16px;border-radius:10px}
+.fine{font-size:13px;color:#667481;margin-top:10px}
+.people{display:flex;gap:12px;align-items:center;margin-top:12px}
+.people img{width:88px;height:88px;object-fit:cover;border-radius:12px;flex-shrink:0}
+footer{margin-top:28px;text-align:center;font-size:12px;color:#7a8792}
+footer a{color:var(--blue)}
 </style>
 </head>
 <body>
-  <div class="wrap">
-    <header class="top">
-      <a class="brand" href="https://mng-colonia-suiza.uy/">
-        <img src="img/mng-logo.png" alt="Escudo MNG">
-        <span>Movimiento<br>Nuevas Generaciones</span>
-      </a>
-    </header>
-    <section class="hero">
-      <img src="img/plaza-dia.jpg" alt="Plaza de los Fundadores, Nueva Helvecia">
-      <div class="shade"></div>
-      <div class="copy">
-        <p class="eyebrow">Martes 19 h · La Casa de Todos</p>
-        <h1>Club de Cocina Neo Helvético</h1>
-        <p>$1.600 el mes. Socio del club gratis.</p>
-      </div>
-    </section>
-    <section class="card">
-      <h2>Qué es</h2>
-      <p class="lead">Club de cocina de la Casa. No es un club de parrilla. Grupo de 8 a 12. Temas distintos cada martes. Se cocina con productores de Colonia Suiza.</p>
-      <div class="grid two">
-        <div class="item"><b>Dónde</b>25 de Agosto 1179, frente a la Plaza de los Fundadores</div>
-        <div class="item"><b>Cuándo</b>Martes 19:00 · 2 veces al mes</div>
-        <div class="item"><b>Quién</b>Agustín Becerra. Algunos martes, chef invitado</div>
-        <div class="item"><b>Cupo</b>8 a 12. Prioridad a socios del MNG</div>
-      </div>
-    </section>
-    <div class="photo"><img src="img/despensa.jpg" alt="Despensa de la zona"></div>
-    <p class="caption">70% o más de la despensa sale de productores del Este de Colonia.</p>
-    <section class="card">
-      <h2>Cómo se paga</h2>
-      <div class="price">
-        <span class="month">$1.600</span><span class="month-label">el mes</span>
-        <span class="unit">$800 el taller · van dos martes</span>
-      </div>
-      <span class="tag">socio del club: $0</span>
-      <span class="tag">chef invitado $1.500</span>
-      <p class="lead" style="margin-top:12px">Se paga el mes adelantado. Incluye las dos clases. La Comisión Directiva asigna 1 beca completa y 2 del 50%.</p>
-      <p class="fine">Faltar un martes no descuenta el mes. Baja: aviso antes del 25.</p>
-    </section>
-    <section class="card">
-      <h2>Agenda 4 meses</h2>
-      <table>
-        <thead><tr><th>Fecha</th><th>Tema</th></tr></thead>
-        <tbody>
-          <tr><td>6 oct</td><td>Bases de la Casa</td></tr>
-          <tr><td>20 oct</td><td>Queso I — Don Santi</td></tr>
-          <tr><td>3 nov</td><td>Queso II — cocinar</td></tr>
-          <tr><td>17 nov</td><td>Huerta I</td></tr>
-          <tr><td>1 dic</td><td>Huerta II — conserva</td></tr>
-          <tr><td>15 dic</td><td>Cocina de origen</td></tr>
-          <tr><td>5 ene</td><td>Fuego</td></tr>
-          <tr><td>19 ene</td><td>Mesa Neo Helvética</td></tr>
-        </tbody>
-      </table>
-    </section>
-    <div class="grid two">
-      <div>
-        <div class="photo"><img src="img/manos.jpg" alt="Manos cocinando"></div>
-        <p class="caption">Se cocina a la par.</p>
-      </div>
-      <div>
-        <div class="photo"><img src="img/huerta.jpg" alt="Huerta"></div>
-        <p class="caption">Estación y un frasco para llevar.</p>
-      </div>
-    </div>
-    <section class="card">
-      <h2>Don Santi y la zona</h2>
-      <p class="lead">Bloque queso con Quesos Don Santi. Gestión interna. No se publica alianza hasta que cierren.</p>
-      <div class="photo"><img src="img/fuego.jpg" alt="Parrillero"></div>
-    </section>
-    <section class="card">
-      <h2>La Casa de Todos</h2>
-      <div class="people">
-        <img src="img/mng-grupo.jpg" alt="MNG">
-        <p>MNG desde 1964. Presidente Juan Rey. Tesorería: Enrico Pelaggio.</p>
-      </div>
-      <div class="photo"><img src="img/plaza-banderas.jpg" alt="Plaza de los Fundadores"></div>
-      <a class="cta" href="https://mng-colonia-suiza.uy/">Sitio del MNG</a>
-    </section>
-    <footer>Club de Cocina Neo Helvético · v0.7<br><a href="https://mng-colonia-suiza.uy/">mng-colonia-suiza.uy</a></footer>
-  </div>
+<div class="wrap">
+<header class="top">
+<a class="brand" href="https://mng-colonia-suiza.uy/">
+<img src="https://mng-colonia-suiza.uy/assets/logo-text.png" alt="Escudo MNG">
+<span>Movimiento<br>Nuevas Generaciones</span>
+</a>
+</header>
+<section class="hero">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Plaza_de_los_fundadores_de_la_Colonia_Suiza.JPG/1280px-Plaza_de_los_fundadores_de_la_Colonia_Suiza.JPG" alt="Plaza de los Fundadores, Nueva Helvecia">
+<div class="shade"></div>
+<div class="copy">
+<p class="eyebrow">Martes 19 h · La Casa de Todos</p>
+<h1>Club de Cocina Neo Helvético</h1>
+<p>$1.600 el mes. Socio del club gratis.</p>
+</div>
+</section>
+<section class="card">
+<h2>Qué es</h2>
+<p class="lead">Club de cocina de la Casa. No es un club de parrilla. Grupo de 8 a 12. Temas distintos cada martes. Se cocina con productores de Colonia Suiza.</p>
+<div class="grid two">
+<div class="item"><b>Dónde</b>25 de Agosto 1179, frente a la Plaza de los Fundadores</div>
+<div class="item"><b>Cuándo</b>Martes 19:00 · 2 veces al mes</div>
+<div class="item"><b>Quién</b>Agustín Becerra. Algunos martes, chef invitado</div>
+<div class="item"><b>Cupo</b>8 a 12. Prioridad a socios del MNG</div>
+</div>
+</section>
+<section class="card">
+<h2>Cómo se paga</h2>
+<div class="price">
+<span class="month">$1.600</span><span class="month-label">el mes</span>
+<span class="unit">$800 el taller · van dos martes</span>
+</div>
+<span class="tag">socio del club: $0</span>
+<span class="tag">chef invitado $1.500</span>
+<p class="lead" style="margin-top:12px">Se paga el mes adelantado. Incluye las dos clases. La Comisión Directiva asigna 1 beca completa y 2 del 50%.</p>
+<p class="fine">Faltar un martes no descuenta el mes. Baja: aviso antes del 25.</p>
+</section>
+<section class="card">
+<h2>Agenda 4 meses</h2>
+<table>
+<thead><tr><th>Fecha</th><th>Tema</th></tr></thead>
+<tbody>
+<tr><td>6 oct</td><td>Bases de la Casa</td></tr>
+<tr><td>20 oct</td><td>Queso I — Don Santi</td></tr>
+<tr><td>3 nov</td><td>Queso II — cocinar</td></tr>
+<tr><td>17 nov</td><td>Huerta I</td></tr>
+<tr><td>1 dic</td><td>Huerta II — conserva</td></tr>
+<tr><td>15 dic</td><td>Cocina de origen</td></tr>
+<tr><td>5 ene</td><td>Fuego</td></tr>
+<tr><td>19 ene</td><td>Mesa Neo Helvética</td></tr>
+</tbody>
+</table>
+</section>
+<section class="card">
+<h2>Don Santi y la zona</h2>
+<p class="lead">Bloque queso con Quesos Don Santi. Gestión interna. No se publica alianza hasta que cierren.</p>
+</section>
+<section class="card">
+<h2>La Casa de Todos</h2>
+<div class="people">
+<img src="https://mng-colonia-suiza.uy/assets/images/MNG-logo-background-transparent.jpg" alt="MNG">
+<p>MNG desde 1964. Presidente Juan Rey. Tesorería: Enrico Pelaggio.</p>
+</div>
+<div class="photo"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Reloj_de_flores_y_banderas_en_la_Plaza_de_los_Fundadores.JPG/1280px-Reloj_de_flores_y_banderas_en_la_Plaza_de_los_Fundadores.JPG" alt="Plaza de los Fundadores"></div>
+<a class="cta" href="https://mng-colonia-suiza.uy/">Sitio del MNG</a>
+</section>
+<footer>Club de Cocina Neo Helvético · v0.7<br><a href="https://mng-colonia-suiza.uy/">mng-colonia-suiza.uy</a></footer>
+</div>
 </body>
 </html>
