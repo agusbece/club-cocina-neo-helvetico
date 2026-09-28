@@ -3,95 +3,118 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Club de Cocina Neo Helvético — MNG Nueva Helvecia</title>
-<meta name="description" content="Martes 19 h. $1.600 el mes. $800 el taller. Socio del club gratis.">
-<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<title>Club de Cocina Neo Helvético</title>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-:root{--cream:#f7f1e6;--paper:#fffaf2;--wine:#7a1f2b;--wine-deep:#5c1620;--slate:#3d4a55;--line:rgba(122,31,43,.16);--blue:#2f4d6a;--max:720px}
+:root{--brown:#9c4e1b;--brown-deep:#824012;--orange:#eeac5d;--orange-soft:#f1b86f;--cream:#fbf5ec;--cream-dim:rgba(251,245,236,.92);--kraft:#c89a68;--shadow:0 10px 30px rgba(60,30,8,.18);--maxw:430px}
 *{box-sizing:border-box;margin:0;padding:0}
-body{font-family:'Source Sans 3',system-ui,sans-serif;background:var(--cream);color:var(--slate);line-height:1.5}
-img{max-width:100%;display:block}
-a{color:var(--wine)}
-.wrap{max-width:var(--max);margin:0 auto;padding:0 16px 72px}
-header.top{display:flex;align-items:center;padding:14px 0 10px;gap:12px}
-.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--wine)}
-.brand img{height:54px;width:auto}
-.brand span{font-size:11px;letter-spacing:.12em;text-transform:uppercase;font-weight:700;line-height:1.3}
-.hero{position:relative;border-radius:18px;overflow:hidden;margin:8px 0 18px}
-.hero img{width:100%;height:320px;object-fit:cover}
-.hero .shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(92,22,32,.15),rgba(92,22,32,.74))}
-.hero .copy{position:absolute;left:18px;right:18px;bottom:18px;color:#fff}
-.eyebrow{font-size:12px;letter-spacing:.14em;text-transform:uppercase;opacity:.92}
-h1,h2{font-family:'Libre Baskerville',Georgia,serif;color:var(--wine);font-weight:700}
-.hero h1{color:#fff;font-size:clamp(28px,6vw,40px);line-height:1.15;margin:6px 0 8px}
-.lead{font-size:17px}
-.card{background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:20px;margin-top:14px}
-.grid{display:grid;gap:10px;margin-top:12px}
-@media(min-width:560px){.grid.two{grid-template-columns:1fr 1fr}}
-.item{background:#f3eadc;border-radius:12px;padding:12px 13px}
-.item b{display:block;color:var(--wine);font-size:12px;letter-spacing:.06em;text-transform:uppercase;margin-bottom:2px}
-.photo{border-radius:14px;overflow:hidden;margin:12px 0 4px}
-.photo img{width:100%;height:210px;object-fit:cover}
-.caption{font-size:12px;color:#7a8792;margin-bottom:8px}
-.price{margin:6px 0 10px}
-.price .month{font-family:'Libre Baskerville',serif;font-size:46px;line-height:1;color:var(--wine-deep)}
-.price .month-label{font-size:16px;margin-left:6px}
-.price .unit{display:block;margin-top:4px;font-size:13px;color:#7a8792}
-.tag{font-size:12px;background:#f3eadc;border-radius:999px;padding:4px 8px;display:inline-block;margin:4px 4px 0 0}
-table{width:100%;border-collapse:collapse;font-size:14px;margin-top:8px}
-th,td{text-align:left;padding:8px 4px;border-bottom:1px solid var(--line)}
-th{color:var(--wine);font-size:11px;letter-spacing:.06em;text-transform:uppercase}
-.cta{display:block;text-align:center;margin-top:12px;background:var(--wine);color:#fff;text-decoration:none;font-weight:700;padding:13px 16px;border-radius:10px}
-.fine{font-size:13px;color:#667481;margin-top:10px}
-.people{display:flex;gap:12px;align-items:center;margin-top:12px}
-.people img{width:88px;height:88px;object-fit:cover;border-radius:12px;flex-shrink:0}
-footer{margin-top:28px;text-align:center;font-size:12px;color:#7a8792}
-footer a{color:var(--blue)}
+body{font-family:'Quicksand',system-ui,sans-serif;color:var(--cream);background:var(--kraft);background-image:repeating-linear-gradient(135deg,rgba(255,255,255,.06) 0 14px,transparent 14px 28px);display:flex;justify-content:center}
+.flyer{width:100%;max-width:var(--maxw);background:#b88955;box-shadow:0 0 60px rgba(50,25,5,.35);overflow:hidden}
+.badge{display:inline-block;font-family:'Fredoka',sans-serif;font-weight:600;background:var(--brown);color:var(--cream);padding:.45em .85em;border-radius:16px;box-shadow:var(--shadow)}
+.badge.orange{background:var(--orange);color:var(--brown-deep)}
+h2.badge{font-size:clamp(26px,7.4vw,36px)}
+p,li{font-weight:500;line-height:1.5;font-size:clamp(16px,4.4vw,19px)}
+strong{font-weight:700;color:#fff}
+.pad{padding:34px 28px}
+.cta{display:block;width:84%;margin:30px auto 4px;text-align:center;text-decoration:none;font-family:'Fredoka',sans-serif;font-weight:500;font-size:clamp(18px,5vw,22px);color:var(--cream);padding:16px 20px;border-radius:40px;border:1.5px solid rgba(255,255,255,.7);background:rgba(255,255,255,.13)}
+.cta.underline{text-decoration:underline;text-underline-offset:4px}
+.hero-photo{position:relative}
+.hero-photo img{display:block;width:100%;height:420px;object-fit:cover}
+.hero-photo::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(40,20,5,.55) 0%,rgba(40,20,5,0) 28%,rgba(120,60,15,.4) 100%)}
+.hero-top{position:absolute;top:18px;left:0;right:0;z-index:2;text-align:center;font-family:'Fredoka',sans-serif;color:#fff;text-shadow:0 2px 8px rgba(0,0,0,.5)}
+.hero-top .a{font-size:clamp(16px,4.6vw,20px)}
+.hero-top .b{font-size:clamp(18px,5.2vw,23px);font-weight:700}
+.hero-title{position:absolute;left:20px;bottom:58px;z-index:2;font-family:'Fredoka',sans-serif;font-weight:700;color:#fff;font-size:clamp(42px,14vw,64px);line-height:.92;text-shadow:0 4px 14px rgba(0,0,0,.5)}
+.hero-author{position:absolute;right:14px;bottom:16px;z-index:2}
+.hero-author .badge{font-size:clamp(18px,5.4vw,24px);background:var(--orange-soft);color:#fff;border-radius:14px;padding:.3em .7em}
+.points{list-style:none;display:flex;flex-direction:column;gap:22px}
+.point{display:flex;gap:16px}
+.point .ic{flex:0 0 auto;width:50px;height:50px;border:2.5px solid var(--cream);border-radius:50%;display:grid;place-items:center}
+.point .ic svg{width:22px;height:22px;stroke:var(--cream);fill:none;stroke-width:2.5;stroke-linecap:round}
+.point p{color:var(--cream-dim)}
+.photo-strip img{display:block;width:100%;height:220px;object-fit:cover}
+.exp-sub{font-family:'Fredoka',sans-serif;font-weight:600;text-align:center;font-size:clamp(20px,5.4vw,24px);margin:18px 0 12px}
+.steps{list-style:none;display:flex;flex-direction:column;gap:22px;margin-top:20px}
+.step{display:flex;gap:14px}
+.step .chk{flex:0 0 auto;width:46px;height:46px;border:2px solid var(--cream);border-radius:50%;display:grid;place-items:center}
+.step h3{font-family:'Fredoka',sans-serif;font-weight:600;font-size:clamp(18px,5.2vw,23px);margin-bottom:4px}
+.step p{color:var(--cream-dim);font-size:clamp(15px,4.2vw,17px)}
+.offer{font-family:'Fredoka',sans-serif;font-weight:700;text-align:center;font-size:clamp(40px,12vw,56px);color:#fff;line-height:1}
+.offer-sub{text-align:center;font-family:'Fredoka',sans-serif;font-size:clamp(18px,5vw,22px);margin-top:6px}
+.offer-unit{text-align:center;color:var(--cream-dim);font-size:15px;margin-top:6px}
+.blocktext p{margin-bottom:16px;color:var(--cream-dim)}
+.agenda{width:100%;border-collapse:collapse;margin-top:12px;font-size:15px}
+.agenda td{padding:8px 0;border-bottom:1px solid rgba(251,245,236,.25)}
+.agenda td:first-child{color:var(--orange);font-weight:700;width:72px}
+.about-name{font-family:'Fredoka',sans-serif;font-weight:700;font-size:clamp(28px,8vw,38px);line-height:.95;color:#fff}
+.fine{text-align:center;color:var(--cream-dim);font-size:13px;margin-top:10px}
+footer{text-align:center;padding:18px 20px 28px;font-size:12px;color:var(--cream-dim)}
 </style>
 </head>
 <body>
-<div class="wrap">
-<header class="top">
-<a class="brand" href="https://mng-colonia-suiza.uy/">
-<img src="https://mng-colonia-suiza.uy/assets/logo-text.png" alt="Escudo MNG">
-<span>Movimiento<br>Nuevas Generaciones</span>
-</a>
-</header>
-<section class="hero">
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Plaza_de_los_fundadores_de_la_Colonia_Suiza.JPG/1280px-Plaza_de_los_fundadores_de_la_Colonia_Suiza.JPG" alt="Plaza de los Fundadores, Nueva Helvecia">
-<div class="shade"></div>
-<div class="copy">
-<p class="eyebrow">Martes 19 h · La Casa de Todos</p>
-<h1>Club de Cocina Neo Helvético</h1>
-<p>$1.600 el mes. Socio del club gratis.</p>
+<main class="flyer">
+<section>
+<div class="hero-photo">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Plaza_de_los_fundadores_de_la_Colonia_Suiza.JPG/1280px-Plaza_de_los_fundadores_de_la_Colonia_Suiza.JPG" alt="Plaza de los Fundadores">
+<div class="hero-top"><div class="a">Martes 19 h · La Casa de Todos</div><div class="b">CICLO OCT 2026 – ENE 2027</div></div>
+<div class="hero-title">Club de<br>Cocina</div>
+<div class="hero-author"><span class="badge">Neo Helvético</span></div>
+</div>
+<div class="pad">
+<ul class="points">
+<li class="point"><span class="ic"><svg viewBox="0 0 24 24"><path d="M4 12h15M13 6l6 6-6 6"/></svg></span><p>Proceso de 4 meses en la Casa. Se puede cortar a 2 meses si hay que probar pulso.</p></li>
+<li class="point"><span class="ic"><svg viewBox="0 0 24 24"><path d="M4 12h15M13 6l6 6-6 6"/></svg></span><p>Se cocina a la par, con productores del Este de Colonia. No es un club de parrilla.</p></li>
+<li class="point"><span class="ic"><svg viewBox="0 0 24 24"><path d="M4 12h15M13 6l6 6-6 6"/></svg></span><p>Grupos chicos: 8 a 12 personas. Prioridad a socios del Movimiento.</p></li>
+</ul>
+<a class="cta underline" href="#inversion">VER INVERSIÓN</a>
 </div>
 </section>
-<section class="card">
-<h2>Qué es</h2>
-<p class="lead">Club de cocina de la Casa. No es un club de parrilla. Grupo de 8 a 12. Temas distintos cada martes. Se cocina con productores de Colonia Suiza.</p>
-<div class="grid two">
-<div class="item"><b>Dónde</b>25 de Agosto 1179, frente a la Plaza de los Fundadores</div>
-<div class="item"><b>Cuándo</b>Martes 19:00 · 2 veces al mes</div>
-<div class="item"><b>Quién</b>Agustín Becerra. Algunos martes, chef invitado</div>
-<div class="item"><b>Cupo</b>8 a 12. Prioridad a socios del MNG</div>
+<section>
+<div class="pad">
+<h2 class="badge">¿Qué es el Club?</h2>
+<div class="blocktext" style="margin-top:22px">
+<p>Una actividad más de <strong>La Casa de Todos</strong>. Oficio compartido, como pintura o lenguas. El margen va al fondo de cocina.</p>
+<p><strong>Hacerse socio del club es gratis.</strong> El taller se paga mes a mes.</p>
+<p>Temas distintos cada martes. Al menos 70% de la despensa sale de la zona.</p>
+</div>
+<a class="cta" href="https://mng-colonia-suiza.uy/">SITIO DEL MNG</a>
+</div>
+<div class="photo-strip" style="clip-path:polygon(0 12%,100% 0,100% 100%,0 100%)">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Reloj_de_flores_y_banderas_en_la_Plaza_de_los_Fundadores.JPG/1280px-Reloj_de_flores_y_banderas_en_la_Plaza_de_los_Fundadores.JPG" alt="Plaza">
 </div>
 </section>
-<section class="card">
-<h2>Cómo se paga</h2>
-<div class="price">
-<span class="month">$1.600</span><span class="month-label">el mes</span>
-<span class="unit">$800 el taller · van dos martes</span>
+<section>
+<div class="pad">
+<h2 class="badge">¿Cómo trabajaremos?</h2>
+<div class="exp-sub">La experiencia</div>
+<p style="color:var(--cream-dim)">Martes 19:00 a 21:30. Se llega, se cocina, se come, se limpia.</p>
+<ul class="steps">
+<li class="step"><span class="chk">1</span><div><h3>Octubre · Bases y queso</h3><p>6 y 20 oct. Cuchillo y Quesos Don Santi.</p></div></li>
+<li class="step"><span class="chk">2</span><div><h3>Noviembre · Queso y huerta</h3><p>3 y 17 nov. Fundir y plato de estación.</p></div></li>
+<li class="step"><span class="chk">3</span><div><h3>Diciembre · Conserva y origen</h3><p>1 y 15 dic. Un frasco. Sin clase en la Bierfest 58.</p></div></li>
+<li class="step"><span class="chk">4</span><div><h3>Enero · Fuego y mesa</h3><p>5 y 19 ene. Módulo de parrilla y cierre.</p></div></li>
+</ul>
 </div>
-<span class="tag">socio del club: $0</span>
-<span class="tag">chef invitado $1.500</span>
-<p class="lead" style="margin-top:12px">Se paga el mes adelantado. Incluye las dos clases. La Comisión Directiva asigna 1 beca completa y 2 del 50%.</p>
-<p class="fine">Faltar un martes no descuenta el mes. Baja: aviso antes del 25.</p>
 </section>
-<section class="card">
-<h2>Agenda 4 meses</h2>
-<table>
-<thead><tr><th>Fecha</th><th>Tema</th></tr></thead>
-<tbody>
+<section id="inversion">
+<div class="pad">
+<h2 class="badge">Inversión</h2>
+<p class="offer">$1.600</p>
+<p class="offer-sub">el mes</p>
+<p class="offer-unit">$800 el taller · van dos martes</p>
+<div class="blocktext" style="margin-top:20px">
+<p>Se paga adelantado. La seña es el primer mes.</p>
+<p>La Comisión Directiva asigna <strong>1 beca completa</strong> y <strong>2 del 50%</strong>.</p>
+<p>Noche de chef invitado: <strong>$1.500</strong>.</p>
+</div>
+<a class="cta underline" href="https://mng-colonia-suiza.uy/">ESCRIBIR A LA CASA</a>
+<p class="fine">Baja: aviso antes del 25.</p>
+</div>
+</section>
+<section>
+<div class="pad">
+<h2 class="badge">Agenda</h2>
+<table class="agenda">
 <tr><td>6 oct</td><td>Bases de la Casa</td></tr>
 <tr><td>20 oct</td><td>Queso I — Don Santi</td></tr>
 <tr><td>3 nov</td><td>Queso II — cocinar</td></tr>
@@ -100,23 +123,21 @@ footer a{color:var(--blue)}
 <tr><td>15 dic</td><td>Cocina de origen</td></tr>
 <tr><td>5 ene</td><td>Fuego</td></tr>
 <tr><td>19 ene</td><td>Mesa Neo Helvética</td></tr>
-</tbody>
 </table>
-</section>
-<section class="card">
-<h2>Don Santi y la zona</h2>
-<p class="lead">Bloque queso con Quesos Don Santi. Gestión interna. No se publica alianza hasta que cierren.</p>
-</section>
-<section class="card">
-<h2>La Casa de Todos</h2>
-<div class="people">
-<img src="https://mng-colonia-suiza.uy/assets/images/MNG-logo-background-transparent.jpg" alt="MNG">
-<p>MNG desde 1964. Presidente Juan Rey. Tesorería: Enrico Pelaggio.</p>
 </div>
-<div class="photo"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Reloj_de_flores_y_banderas_en_la_Plaza_de_los_Fundadores.JPG/1280px-Reloj_de_flores_y_banderas_en_la_Plaza_de_los_Fundadores.JPG" alt="Plaza de los Fundadores"></div>
-<a class="cta" href="https://mng-colonia-suiza.uy/">Sitio del MNG</a>
 </section>
-<footer>Club de Cocina Neo Helvético · v0.7<br><a href="https://mng-colonia-suiza.uy/">mng-colonia-suiza.uy</a></footer>
+<section>
+<div class="pad">
+<h2 class="badge orange">La Casa</h2>
+<p class="about-name" style="margin:16px 0 12px">MNG<br>Nueva Helvecia</p>
+<div class="blocktext">
+<p>Desde 1964. Presidente Juan Rey. Tesorería: Enrico Pelaggio.</p>
+<p>25 de Agosto 1179. Tel. 4554 5221.</p>
 </div>
+<a class="cta" href="https://mng-colonia-suiza.uy/">mng-colonia-suiza.uy</a>
+</div>
+</section>
+<footer>Club de Cocina Neo Helvético · v0.8</footer>
+</main>
 </body>
 </html>
