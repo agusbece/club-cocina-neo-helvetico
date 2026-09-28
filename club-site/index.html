@@ -6,47 +6,39 @@
 <title>Club de Cocina Neo Helvético</title>
 <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-:root{--brown:#9c4e1b;--brown-deep:#824012;--orange:#eeac5d;--orange-soft:#f1b86f;--cream:#fbf5ec;--cream-dim:rgba(251,245,236,.92);--kraft:#c89a68;--shadow:0 10px 30px rgba(60,30,8,.18);--maxw:430px}
+:root{--brown:#9c4e1b;--orange:#eeac5d;--orange-soft:#f1b86f;--cream:#fbf5ec;--cream-dim:rgba(251,245,236,.92);--maxw:430px}
 *{box-sizing:border-box;margin:0;padding:0}
-body{font-family:'Quicksand',system-ui,sans-serif;color:var(--cream);background:var(--kraft);background-image:repeating-linear-gradient(135deg,rgba(255,255,255,.06) 0 14px,transparent 14px 28px);display:flex;justify-content:center}
-.flyer{width:100%;max-width:var(--maxw);background:#b88955;box-shadow:0 0 60px rgba(50,25,5,.35);overflow:hidden}
-.badge{display:inline-block;font-family:'Fredoka',sans-serif;font-weight:600;background:var(--brown);color:var(--cream);padding:.45em .85em;border-radius:16px;box-shadow:var(--shadow)}
-.badge.orange{background:var(--orange);color:var(--brown-deep)}
+body{font-family:'Quicksand',system-ui,sans-serif;color:var(--cream);background:#c89a68;display:flex;justify-content:center}
+.flyer{width:100%;max-width:var(--maxw);background:#b88955;overflow:hidden}
+.badge{display:inline-block;font-family:'Fredoka',sans-serif;font-weight:600;background:var(--brown);color:var(--cream);padding:.45em .85em;border-radius:16px}
+.badge.orange{background:var(--orange);color:#824012}
 h2.badge{font-size:clamp(26px,7.4vw,36px)}
 p,li{font-weight:500;line-height:1.5;font-size:clamp(16px,4.4vw,19px)}
-strong{font-weight:700;color:#fff}
+strong{color:#fff}
 .pad{padding:34px 28px}
-.cta{display:block;width:84%;margin:30px auto 4px;text-align:center;text-decoration:none;font-family:'Fredoka',sans-serif;font-weight:500;font-size:clamp(18px,5vw,22px);color:var(--cream);padding:16px 20px;border-radius:40px;border:1.5px solid rgba(255,255,255,.7);background:rgba(255,255,255,.13)}
-.cta.underline{text-decoration:underline;text-underline-offset:4px}
+.cta{display:block;width:84%;margin:28px auto 4px;text-align:center;text-decoration:none;font-family:'Fredoka',sans-serif;font-size:clamp(18px,5vw,22px);color:var(--cream);padding:16px 20px;border-radius:40px;border:1.5px solid rgba(255,255,255,.7);background:rgba(255,255,255,.13)}
 .hero-photo{position:relative}
-.hero-photo img{display:block;width:100%;height:420px;object-fit:cover}
-.hero-photo::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(40,20,5,.55) 0%,rgba(40,20,5,0) 28%,rgba(120,60,15,.4) 100%)}
-.hero-top{position:absolute;top:18px;left:0;right:0;z-index:2;text-align:center;font-family:'Fredoka',sans-serif;color:#fff;text-shadow:0 2px 8px rgba(0,0,0,.5)}
-.hero-top .a{font-size:clamp(16px,4.6vw,20px)}
-.hero-top .b{font-size:clamp(18px,5.2vw,23px);font-weight:700}
-.hero-title{position:absolute;left:20px;bottom:58px;z-index:2;font-family:'Fredoka',sans-serif;font-weight:700;color:#fff;font-size:clamp(42px,14vw,64px);line-height:.92;text-shadow:0 4px 14px rgba(0,0,0,.5)}
+.hero-photo img{display:block;width:100%;height:430px;object-fit:cover}
+.hero-photo::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(40,20,5,.5),transparent 32%,rgba(80,40,10,.55))}
+.hero-top{position:absolute;top:18px;left:0;right:0;z-index:2;text-align:center;font-family:'Fredoka',sans-serif;color:#fff;text-shadow:0 2px 8px #000}
+.hero-title{position:absolute;left:20px;bottom:58px;z-index:2;font-family:'Fredoka',sans-serif;font-weight:700;color:#fff;font-size:clamp(42px,14vw,64px);line-height:.92;text-shadow:0 4px 14px #000}
 .hero-author{position:absolute;right:14px;bottom:16px;z-index:2}
-.hero-author .badge{font-size:clamp(18px,5.4vw,24px);background:var(--orange-soft);color:#fff;border-radius:14px;padding:.3em .7em}
+.hero-author .badge{background:var(--orange-soft);color:#fff}
 .points{list-style:none;display:flex;flex-direction:column;gap:22px}
 .point{display:flex;gap:16px}
-.point .ic{flex:0 0 auto;width:50px;height:50px;border:2.5px solid var(--cream);border-radius:50%;display:grid;place-items:center}
-.point .ic svg{width:22px;height:22px;stroke:var(--cream);fill:none;stroke-width:2.5;stroke-linecap:round}
+.point .ic{width:50px;height:50px;border:2.5px solid var(--cream);border-radius:50%;display:grid;place-items:center;flex:0 0 auto}
 .point p{color:var(--cream-dim)}
-.photo-strip img{display:block;width:100%;height:220px;object-fit:cover}
-.exp-sub{font-family:'Fredoka',sans-serif;font-weight:600;text-align:center;font-size:clamp(20px,5.4vw,24px);margin:18px 0 12px}
+.photo-strip img{display:block;width:100%;height:230px;object-fit:cover}
 .steps{list-style:none;display:flex;flex-direction:column;gap:22px;margin-top:20px}
 .step{display:flex;gap:14px}
-.step .chk{flex:0 0 auto;width:46px;height:46px;border:2px solid var(--cream);border-radius:50%;display:grid;place-items:center}
-.step h3{font-family:'Fredoka',sans-serif;font-weight:600;font-size:clamp(18px,5.2vw,23px);margin-bottom:4px}
-.step p{color:var(--cream-dim);font-size:clamp(15px,4.2vw,17px)}
-.offer{font-family:'Fredoka',sans-serif;font-weight:700;text-align:center;font-size:clamp(40px,12vw,56px);color:#fff;line-height:1}
-.offer-sub{text-align:center;font-family:'Fredoka',sans-serif;font-size:clamp(18px,5vw,22px);margin-top:6px}
-.offer-unit{text-align:center;color:var(--cream-dim);font-size:15px;margin-top:6px}
+.step .chk{width:46px;height:46px;border:2px solid var(--cream);border-radius:50%;display:grid;place-items:center;flex:0 0 auto}
+.step h3{font-family:'Fredoka',sans-serif;font-size:20px}
+.step p{color:var(--cream-dim);font-size:16px}
+.price-box{text-align:center;margin:18px 0 8px}
+.price-box .month{font-family:'Fredoka',sans-serif;font-weight:700;font-size:clamp(52px,16vw,72px);color:#fff;line-height:.9}
+.price-box .month-l{font-family:'Fredoka',sans-serif;font-size:26px;margin-top:4px}
+.price-box .unit{display:block;margin-top:10px;font-size:14px;color:var(--cream-dim)}
 .blocktext p{margin-bottom:16px;color:var(--cream-dim)}
-.agenda{width:100%;border-collapse:collapse;margin-top:12px;font-size:15px}
-.agenda td{padding:8px 0;border-bottom:1px solid rgba(251,245,236,.25)}
-.agenda td:first-child{color:var(--orange);font-weight:700;width:72px}
-.about-name{font-family:'Fredoka',sans-serif;font-weight:700;font-size:clamp(28px,8vw,38px);line-height:.95;color:#fff}
 .fine{text-align:center;color:var(--cream-dim);font-size:13px;margin-top:10px}
 footer{text-align:center;padding:18px 20px 28px;font-size:12px;color:var(--cream-dim)}
 </style>
@@ -55,89 +47,69 @@ footer{text-align:center;padding:18px 20px 28px;font-size:12px;color:var(--cream
 <main class="flyer">
 <section>
 <div class="hero-photo">
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Plaza_de_los_fundadores_de_la_Colonia_Suiza.JPG/1280px-Plaza_de_los_fundadores_de_la_Colonia_Suiza.JPG" alt="Plaza de los Fundadores">
-<div class="hero-top"><div class="a">Martes 19 h · La Casa de Todos</div><div class="b">CICLO OCT 2026 – ENE 2027</div></div>
+<img src="https://images.unsplash.com/photo-1486297678162-eb2a19b0a32d?auto=format&fit=crop&w=1200&q=70" alt="Queso">
+<div class="hero-top">Martes 19 h · La Casa de Todos</div>
 <div class="hero-title">Club de<br>Cocina</div>
 <div class="hero-author"><span class="badge">Neo Helvético</span></div>
 </div>
 <div class="pad">
 <ul class="points">
-<li class="point"><span class="ic"><svg viewBox="0 0 24 24"><path d="M4 12h15M13 6l6 6-6 6"/></svg></span><p>Proceso de 4 meses en la Casa. Se puede cortar a 2 meses si hay que probar pulso.</p></li>
-<li class="point"><span class="ic"><svg viewBox="0 0 24 24"><path d="M4 12h15M13 6l6 6-6 6"/></svg></span><p>Se cocina a la par, con productores del Este de Colonia. No es un club de parrilla.</p></li>
-<li class="point"><span class="ic"><svg viewBox="0 0 24 24"><path d="M4 12h15M13 6l6 6-6 6"/></svg></span><p>Grupos chicos: 8 a 12 personas. Prioridad a socios del Movimiento.</p></li>
+<li class="point"><span class="ic">→</span><p>Se cocina a la par, con lo de la zona. No es un club de parrilla.</p></li>
+<li class="point"><span class="ic">→</span><p>Socio del club: gratis. El taller se paga mes a mes.</p></li>
+<li class="point"><span class="ic">→</span><p>8 a 12 personas. Prioridad a socios del Movimiento.</p></li>
 </ul>
-<a class="cta underline" href="#inversion">VER INVERSIÓN</a>
+<a class="cta" href="#inversion">VER INVERSIÓN</a>
 </div>
 </section>
 <section>
 <div class="pad">
 <h2 class="badge">¿Qué es el Club?</h2>
 <div class="blocktext" style="margin-top:22px">
-<p>Una actividad más de <strong>La Casa de Todos</strong>. Oficio compartido, como pintura o lenguas. El margen va al fondo de cocina.</p>
-<p><strong>Hacerse socio del club es gratis.</strong> El taller se paga mes a mes.</p>
+<p>Una actividad de <strong>La Casa de Todos</strong>. El margen va al fondo de cocina.</p>
 <p>Temas distintos cada martes. Al menos 70% de la despensa sale de la zona.</p>
 </div>
-<a class="cta" href="https://mng-colonia-suiza.uy/">SITIO DEL MNG</a>
 </div>
-<div class="photo-strip" style="clip-path:polygon(0 12%,100% 0,100% 100%,0 100%)">
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Reloj_de_flores_y_banderas_en_la_Plaza_de_los_Fundadores.JPG/1280px-Reloj_de_flores_y_banderas_en_la_Plaza_de_los_Fundadores.JPG" alt="Plaza">
-</div>
+<div class="photo-strip"><img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=1200&q=70" alt="Cocinar"></div>
 </section>
 <section>
 <div class="pad">
 <h2 class="badge">¿Cómo trabajaremos?</h2>
-<div class="exp-sub">La experiencia</div>
-<p style="color:var(--cream-dim)">Martes 19:00 a 21:30. Se llega, se cocina, se come, se limpia.</p>
+<p style="color:var(--cream-dim);margin-top:12px">Martes 19:00 a 21:30. Dos veces al mes.</p>
 <ul class="steps">
-<li class="step"><span class="chk">1</span><div><h3>Octubre · Bases y queso</h3><p>6 y 20 oct. Cuchillo y Quesos Don Santi.</p></div></li>
-<li class="step"><span class="chk">2</span><div><h3>Noviembre · Queso y huerta</h3><p>3 y 17 nov. Fundir y plato de estación.</p></div></li>
-<li class="step"><span class="chk">3</span><div><h3>Diciembre · Conserva y origen</h3><p>1 y 15 dic. Un frasco. Sin clase en la Bierfest 58.</p></div></li>
-<li class="step"><span class="chk">4</span><div><h3>Enero · Fuego y mesa</h3><p>5 y 19 ene. Módulo de parrilla y cierre.</p></div></li>
+<li class="step"><span class="chk">1</span><div><h3>Bases</h3><p>Cuchillo, orden y una comida simple.</p></div></li>
+<li class="step"><span class="chk">2</span><div><h3>Queso</h3><p>Productores de la zona. Un plato caliente.</p></div></li>
+<li class="step"><span class="chk">3</span><div><h3>Huerta y conserva</h3><p>Estación y un frasco para llevar.</p></div></li>
+<li class="step"><span class="chk">4</span><div><h3>Origen y fuego</h3><p>Cocina de casa y un módulo de parrilla.</p></div></li>
 </ul>
 </div>
 </section>
+<div class="photo-strip"><img src="https://images.unsplash.com/photo-1466637574441-749b8f2c5fd9?auto=format&fit=crop&w=1200&q=70" alt="Huerta"></div>
 <section id="inversion">
 <div class="pad">
 <h2 class="badge">Inversión</h2>
-<p class="offer">$1.600</p>
-<p class="offer-sub">el mes</p>
-<p class="offer-unit">$800 el taller · van dos martes</p>
+<div class="price-box">
+<div class="month">$1.600</div>
+<div class="month-l">el mes</div>
+<span class="unit">$800 el taller · van dos martes</span>
+</div>
 <div class="blocktext" style="margin-top:20px">
 <p>Se paga adelantado. La seña es el primer mes.</p>
 <p>La Comisión Directiva asigna <strong>1 beca completa</strong> y <strong>2 del 50%</strong>.</p>
-<p>Noche de chef invitado: <strong>$1.500</strong>.</p>
+<p>Chef invitado: <strong>$1.500</strong>.</p>
 </div>
-<a class="cta underline" href="https://mng-colonia-suiza.uy/">ESCRIBIR A LA CASA</a>
+<a class="cta" href="https://mng-colonia-suiza.uy/">ESCRIBIR A LA CASA</a>
 <p class="fine">Baja: aviso antes del 25.</p>
 </div>
 </section>
-<section>
-<div class="pad">
-<h2 class="badge">Agenda</h2>
-<table class="agenda">
-<tr><td>6 oct</td><td>Bases de la Casa</td></tr>
-<tr><td>20 oct</td><td>Queso I — Don Santi</td></tr>
-<tr><td>3 nov</td><td>Queso II — cocinar</td></tr>
-<tr><td>17 nov</td><td>Huerta I</td></tr>
-<tr><td>1 dic</td><td>Huerta II — conserva</td></tr>
-<tr><td>15 dic</td><td>Cocina de origen</td></tr>
-<tr><td>5 ene</td><td>Fuego</td></tr>
-<tr><td>19 ene</td><td>Mesa Neo Helvética</td></tr>
-</table>
-</div>
-</section>
+<div class="photo-strip"><img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=1200&q=70" alt="Comida al fuego"></div>
 <section>
 <div class="pad">
 <h2 class="badge orange">La Casa</h2>
-<p class="about-name" style="margin:16px 0 12px">MNG<br>Nueva Helvecia</p>
-<div class="blocktext">
-<p>Desde 1964. Presidente Juan Rey. Tesorería: Enrico Pelaggio.</p>
-<p>25 de Agosto 1179. Tel. 4554 5221.</p>
-</div>
+<div class="blocktext" style="margin-top:16px"><p>MNG Nueva Helvecia. 25 de Agosto 1179. Tel. 4554 5221.</p></div>
 <a class="cta" href="https://mng-colonia-suiza.uy/">mng-colonia-suiza.uy</a>
 </div>
 </section>
-<footer>Club de Cocina Neo Helvético · v0.8</footer>
+<footer>Club de Cocina Neo Helvético</footer>
 </main>
 </body>
 </html>
